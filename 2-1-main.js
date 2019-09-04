@@ -1,8 +1,8 @@
-module.exports =  (app)=> {
-    app.get('/data/',()=>{
-        resizeBy.render('index.html')
+module.exports = (app)=> {
+    app.get('/',(req, res)=>{
+        res.render('index.html')
     })
-    app.get('/user',()=>{
-resizeBy.render('more.html')
+    app.get('/more',(req, res)=>{
+        res.render('more.html')
     })
 }
